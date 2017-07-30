@@ -43,7 +43,7 @@ autocovarianzas<-function(s,p,lwd){
   num2=numeric(p)
   num2=num/n
   
-  ## Calculation the x variable to show the acf of the time series
+  ## Calculation the x variable to show the autocovariance of the time series
   x=numeric(p)
   for(i in 1:p){
     x[i]<-(i-1)*(sqrt(n)/n)
