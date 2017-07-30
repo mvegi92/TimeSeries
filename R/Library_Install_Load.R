@@ -3,7 +3,7 @@
 ############################################################################################
 
 packagesLoad <- function(pack){
-  packages<-foreach(i=1:(dim(pack)[1]), .combine='c') %dopar% paste(pack[i,(dim(pack)[2])])
+  packages<-foreach(i=1:(dim(pack)[1]), .combine='c') %do% paste(pack[i,(dim(pack)[2])])
   return(packages)
 }
 
